@@ -6,10 +6,16 @@ const path = require('path');
 const { trackApiUsage } = require('./utils/trackApiUsage');
 const { createClient } = require('@supabase/supabase-js');
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+// Initialize Supabase only if credentials exist, otherwise mock it or handle gracefully
+let supabase = null;
+if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
+  supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_ROLE_KEY
+  );
+} else {
+  console.warn('⚠️ Supabase credentials missing. Supabase functionality will be disabled.');
+}
 
 // Simple file-based storage for demo purposes
 const DATA_DIR = '/tmp/casa-ai-data';
@@ -90,24 +96,29 @@ module.exports = async function handler(req, res) {
     const isMobileUser = user.id.startsWith('mobile_user_');
 
     if (!isMobileUser) {
-      const { data: userProfile, error: profileError } = await supabase
-        .from('profiles')
-        .select('is_active')
-        .eq('id', user.id)
-        .single();
+      if (!supabase) {
+        console.warn('Cannot check profile: Supabase not initialized');
+        // Fail open or closed based on policy? For now, allow access if no supabase
+      } else {
+        const { data: userProfile, error: profileError } = await supabase
+          .from('profiles')
+          .select('is_active')
+          .eq('id', user.id)
+          .single();
 
-      if (profileError || !userProfile) {
-        console.error('Failed to fetch user profile:', profileError);
-        return res.status(403).json({
-          message: 'Unable to verify account status'
-        });
-      }
+        if (profileError || !userProfile) {
+          console.error('Failed to fetch user profile:', profileError);
+          return res.status(403).json({
+            message: 'Unable to verify account status'
+          });
+        }
 
-      if (userProfile.is_active === false) {
-        console.log('Account is deactivated for user:', user.id);
-        return res.status(403).json({
-          message: 'Your account has been deactivated. Please contact support for assistance.'
-        });
+        if (userProfile.is_active === false) {
+          console.log('Account is deactivated for user:', user.id);
+          return res.status(403).json({
+            message: 'Your account has been deactivated. Please contact support for assistance.'
+          });
+        }
       }
     } else {
       console.log('Skipping profile check for mobile user');
@@ -550,18 +561,23 @@ function saveGeneration(generation) {
 }
 
 // Validate JWT token with Supabase and get real user
-async function validateUserToken(token) {
-  try {
-    // Optimization: If token starts with 'mobile_', skip Supabase check
-    if (token && token.startsWith('mobile_')) {
-      console.log('⚡ Skipping Supabase check for mobile token');
-      return {
-        id: 'mobile_user_' + token.substring(7, 15),
-        email: 'mobile@app.user'
-      };
-    }
+    async function validateUserToken(token) {
+      try {
+        // Optimization: If token starts with 'mobile_', skip Supabase check
+        if (token && token.startsWith('mobile_')) {
+          console.log('⚡ Skipping Supabase check for mobile token');
+          return {
+            id: 'mobile_user_' + token.substring(7, 15),
+            email: 'mobile@app.user'
+          };
+        }
 
-    // First, try Supabase JWT validation (for web users)
+        if (!supabase) {
+          console.error('❌ Supabase not initialized, cannot validate JWT');
+          return null;
+        }
+
+        // First, try Supabase JWT validation (for web users)
     const { data: { user }, error } = await supabase.auth.getUser(token);
 
     if (user && !error) {
