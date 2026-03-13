@@ -1,0 +1,23 @@
+{
+  "name": "casa-ai-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Casa AI mobile app with Gemini Flash 2.5 integration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@google-cloud/aiplatform": "^5.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

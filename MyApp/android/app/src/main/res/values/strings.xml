@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Spacio AI</string>
+  <string name="expo_system_ui_user_interface_style" translatable="false">automatic</string>
+  <string name="facebook_app_id">4144504399130038</string>
+  <string name="facebook_client_token">70880006ec9faedf70a34b9038930398</string>
+  <string name="fb_login_protocol_scheme">fb4144504399130038</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+</resources>

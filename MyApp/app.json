@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Spacio AI",
+    "slug": "interioriq",
+    "version": "1.0.8",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "interioriq",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.reelpop.interioriq",
+      "buildNumber": "9",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Spacio AI needs access to your photo library to allow you to select photos of your rooms for AI-powered interior design transformations. For example, you can choose a photo of your living room from your camera roll, and our AI will analyze it and generate redesign options with different styles, colors, and furniture arrangements based on your preferences.",
+        "NSPhotoLibraryAddUsageDescription": "Spacio AI needs permission to save your AI-generated interior design images to your photo library. For example, when you create a redesigned room using our AI, you can save the final image directly to your Photos app to share with contractors, friends, or family, or to keep as inspiration for your renovation project.",
+        "NSCameraUsageDescription": "Spacio AI needs access to your camera to allow you to take photos of your rooms for AI-powered interior design transformations. For example, you can take a photo of your room directly from the app, and our AI will analyze it and generate redesign options with different styles, colors, and furniture arrangements based on your preferences."
+      }
+    },
+    "android": {
+      "package": "com.reelpop.interioriq",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "template": "./index.html"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#f3e3cf"
+        }
+      ],
+      "expo-tracking-transparency",
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "4144504399130038",
+          "clientToken": "70880006ec9faedf70a34b9038930398",
+          "displayName": "Spacio AI",
+          "scheme": "fb4144504399130038",
+          "advertiserIDCollectionEnabled": false,
+          "autoLogAppEventsEnabled": true,
+          "isAutoInitEnabled": true,
+          "iosUserTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "24a66f4b-b580-4120-8478-18810ff76cb0"
+      },
+      "stripePublishableKey": "pk_live_51SNC5zLPjTKVfNgCMjeU7aLxq5HySjZo0G5rfivw7tLHDw9RRKnOfQAmQNo8Kl39UdGWpHJquEmJBjOqjubD3kAm00TYOlIPNE"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "casa-ai-assistant",
+  "version": "1.0.0",
+  "description": "Casa AI Assistant with mobile app and backend API",
+  "scripts": {
+    "dev": "echo 'API ready for Vercel deployment'",
+    "build": "echo 'No build step needed for serverless functions'",
+    "make-admin": "node scripts/make-admin.mjs",
+    "list-admins": "node scripts/list-admins.mjs"
+  },
+  "dependencies": {
+    "@expo-google-fonts/gabarito": "^0.4.2",
+    "@supabase/supabase-js": "^2.39.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "expo-font": "^14.0.8",
+    "expo-tracking-transparency": "^6.0.7",
+    "stripe": "^19.2.0"
+  }
+}

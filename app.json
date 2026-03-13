@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "65f6fa1c-ce93-4d88-a900-2127d605c344"
+      },
+      "squareApplicationId": "sandbox-sq0idb-rOIFneiIf5bi61HRafCxAQ",
+      "squareEnvironment": "sandbox"
+    },
+    "ios": {
+      "bundleIdentifier": "com.reelpop.casaaiassistant",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
+}

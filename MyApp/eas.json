@@ -1,0 +1,48 @@
+{
+  "cli": {
+    "version": ">= 16.19.3",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://casa-ai-assistant-git-main-gralskis-projects.vercel.app",
+        "EXPO_PUBLIC_APP_VERSION": "1.0.0",
+        "EXPO_PUBLIC_APP_NAME": "InteriorIQ",
+        "EXPO_PUBLIC_REVENUECAT_IOS_API_KEY": "appl_tXiccUrqVPAnLFSZwGGDlDmtoKT",
+        "EXPO_PUBLIC_MIXPANEL_TOKEN": "fe09350129ac38eaac8a5bd8a2e17edb"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://casa-ai-assistant-git-main-gralskis-projects.vercel.app",
+        "EXPO_PUBLIC_APP_VERSION": "1.0.0",
+        "EXPO_PUBLIC_APP_NAME": "InteriorIQ",
+        "EXPO_PUBLIC_REVENUECAT_IOS_API_KEY": "appl_tXiccUrqVPAnLFSZwGGDlDmtoKT",
+        "EXPO_PUBLIC_MIXPANEL_TOKEN": "fe09350129ac38eaac8a5bd8a2e17edb"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://casa-ai-assistant-git-main-gralskis-projects.vercel.app",
+        "EXPO_PUBLIC_APP_VERSION": "1.0.8",
+        "EXPO_PUBLIC_APP_NAME": "Spacio AI",
+        "EXPO_PUBLIC_REVENUECAT_IOS_API_KEY": "appl_tXiccUrqVPAnLFSZwGGDlDmtoKT",
+        "EXPO_PUBLIC_MIXPANEL_TOKEN": "fe09350129ac38eaac8a5bd8a2e17edb"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

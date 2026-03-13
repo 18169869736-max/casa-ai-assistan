@@ -1,0 +1,10 @@
+{
+    "autoApprove": true,
+    "requireConfirmation": {
+      "fileWrite": false,
+      "fileCreate": false,
+      "fileDelete": true,
+      "commandExecution": true
+    },
+    "significantChangeThreshold": "major"
+  }

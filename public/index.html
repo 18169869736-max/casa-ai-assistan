@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Casa AI Backend API Status</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 40px; text-align: center; background: #f8f9fa; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .status { color: #4CAF50; font-size: 18px; font-weight: 600; }
+        .endpoint { background: #f5f5f5; padding: 12px 16px; border-radius: 8px; margin: 10px 0; font-family: monospace; text-align: left; }
+        .note { color: #666; font-size: 14px; margin-top: 20px; }
+        h1 { color: #333; }
+        h3 { color: #555; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 Casa AI Backend API Status</h1>
+        <p class="status">✅ API is running successfully!</p>
+        <p class="note">This page is accessible at: <code>/api-status</code></p>
+
+        <h3>Available Endpoints:</h3>
+        <div class="endpoint">GET /api/health - Health check</div>
+        <div class="endpoint">POST /api/generate-design - Generate AI designs</div>
+        <div class="endpoint">POST /api/regenerate-design - Regenerate variations</div>
+        <div class="endpoint">POST /api/generate-design-custom - Custom prompt designs</div>
+        <div class="endpoint">POST /api/admin-data - Admin data access</div>
+        <div class="endpoint">GET /api/test-gemini - Test Gemini API connection</div>
+
+        <p style="margin-top: 30px;">Powered by Google Gemini Flash 2.5 🤖</p>
+    
+    <script>
+        // Test health endpoint
+        fetch('/api/health')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Health check:', data);
+                document.body.innerHTML += `<p style="color: green;">Health Check: ${data.status}</p>`;
+            })
+            .catch(error => {
+                console.error('Health check failed:', error);
+                document.body.innerHTML += `<p style="color: red;">Health Check Failed</p>`;
+            });
+    </script>
+</body>
+</html>

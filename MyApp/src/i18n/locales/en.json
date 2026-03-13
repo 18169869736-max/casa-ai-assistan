@@ -1,0 +1,543 @@
+{
+  "admin": {
+    "title": "Admin Dashboard",
+    "language": "Language",
+    "languageSelector": "Select Language",
+    "stats": {
+      "title": "Statistics",
+      "totalUsers": "Total Users",
+      "premiumUsers": "Premium Users",
+      "totalGenerations": "Total Generations",
+      "avgGenerations": "Avg Generations/User",
+      "topUser": "Top User"
+    },
+    "userStats": {
+      "title": "User Statistics",
+      "userId": "User ID",
+      "email": "Email",
+      "generations": "Generations",
+      "premium": "Premium",
+      "lastGeneration": "Last Generation",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "timeline": {
+      "title": "Generation Timeline",
+      "date": "Date",
+      "count": "Count"
+    },
+    "loading": "Loading...",
+    "error": "Error loading data",
+    "refresh": "Refresh",
+    "lastUpdated": "Last Updated"
+  },
+  "settings": {
+    "title": "Settings",
+    "general": "General",
+    "language": "Language",
+    "languageDesc": "Change app language",
+    "languageSelector": "Select Language",
+    "support": "Support",
+    "contactSupport": "Contact Support",
+    "contactSupportDesc": "Get help from our team",
+    "rateApp": "Rate App",
+    "rateAppDesc": "Rate us on the App Store",
+    "shareApp": "Share App",
+    "shareAppDesc": "Tell friends about Spacio AI",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "privacyPolicyDesc": "How we protect your data",
+    "termsOfService": "Terms of Service",
+    "termsOfServiceDesc": "Terms and conditions",
+    "about": "About",
+    "version": "Version 1.0.0",
+    "footer": "Spacio AI v1.0.0",
+    "footerSubtext": "Made with ❤️ for beautiful homes"
+  },
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "save": "Save",
+    "done": "Done",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "tryIt": "Try It",
+    "before": "BEFORE",
+    "after": "AFTER",
+    "step": "Step"
+  },
+  "dashboard": {
+    "title": "Spacio AI",
+    "proBadge": "PRO"
+  },
+  "tabs": {
+    "tools": "Tools",
+    "create": "Create",
+    "collection": "Collection"
+  },
+  "create": {
+    "title": "Create New Design",
+    "subtitle": "Transform your space with AI-powered interior design",
+    "startNew": "Start New Project",
+    "continuePrevious": "Continue Previous",
+    "selectDesign": "Select a Design",
+    "selectDesignSubtitle": "Choose a saved design to use as your starting point",
+    "noSavedDesigns": "No saved designs found",
+    "describeVision": "Describe Your Vision"
+  },
+  "collection": {
+    "title": "Collection",
+    "designsSaved": "designs saved",
+    "designSaved": "design saved",
+    "emptyTitle": "No designs yet",
+    "emptyText": "Create your first AI design and it will appear here!"
+  },
+  "onboarding": {
+    "welcome": {
+      "headline": "Reimagine Your Room in Seconds",
+      "subheadline": "Professional-quality design inspiration personalized to your taste, instantly.",
+      "continue": "Continue"
+    },
+    "questionRoom": {
+      "question": "Which room are you redesigning?",
+      "options": {
+        "kitchen": "Kitchen",
+        "livingRoom": "Living Room",
+        "bedroom": "Bedroom",
+        "bathroom": "Bathroom",
+        "office": "Office",
+        "other": "Other"
+      }
+    },
+    "questionGoal": {
+      "question": "What's your main goal?",
+      "options": {
+        "completeMakeover": "Complete makeover",
+        "freshUpdate": "Fresh update",
+        "fixProblems": "Fix problem areas",
+        "exploring": "Just exploring ideas"
+      }
+    },
+    "questionFeeling": {
+      "question": "What feeling do you want this room to have?",
+      "options": {
+        "cozy": "Cozy",
+        "modern": "Modern",
+        "elegant": "Elegant",
+        "vibrant": "Vibrant",
+        "minimalist": "Minimalist",
+        "rustic": "Rustic"
+      }
+    },
+    "questionFrustration": {
+      "question": "What's your biggest frustration with the current space?",
+      "options": {
+        "cluttered": "Too cluttered",
+        "dark": "Feels dark",
+        "outdated": "Outdated",
+        "layout": "Awkward layout",
+        "personality": "Lacks personality"
+      }
+    },
+    "analysis": {
+      "loadingMessage": "Creating your personalized design profile...",
+      "headline": "Perfect!",
+      "summaryPart1": "We're ready to transform your",
+      "summaryPart2": "with a",
+      "summaryPart3": "that brings a",
+      "summaryPart4": "vibe and solves your",
+      "callToAction": "Let's upload your photo and see the magic!",
+      "continue": "Continue",
+      "labels": {
+        "kitchen": "Kitchen",
+        "livingRoom": "Living Room",
+        "bedroom": "Bedroom",
+        "bathroom": "Bathroom",
+        "office": "Office",
+        "other": "Room",
+        "completeMakeover": "complete makeover",
+        "freshUpdate": "fresh update",
+        "fixProblems": "solution",
+        "exploring": "exploration",
+        "cozy": "cozy",
+        "modern": "modern",
+        "elegant": "elegant",
+        "vibrant": "vibrant",
+        "minimalist": "minimalist",
+        "rustic": "rustic",
+        "cluttered": "clutter",
+        "dark": "darkness",
+        "outdated": "outdated style",
+        "layout": "layout issues",
+        "personality": "lack of personality"
+      }
+    },
+    "trackingConsent": {
+      "title": "Help Us Personalize Your Experience",
+      "description": "We'd like your permission to personalize ads and improve your experience. Your privacy is important to us.",
+      "benefit1": "Get better design recommendations tailored to you",
+      "benefit2": "See relevant inspiration and tips",
+      "benefit3": "Help us improve the app for everyone",
+      "privacyNote": "You can change this preference anytime in Settings. We never share your personal information.",
+      "allow": "Allow",
+      "skip": "Not Now"
+    }
+  },
+  "workflow": {
+    "photoUpload": {
+      "title": "Start Redesigning",
+      "subtitle": "Redesign and beautify your home",
+      "addPhoto": "Add a Photo",
+      "changePhoto": "Change Photo",
+      "examplePhotos": "Example Photos",
+      "continue": "Continue",
+      "selectMediaSource": "Select Media Source",
+      "takePhoto": "Take photo from camera",
+      "chooseGallery": "Choose from gallery",
+      "photoRequired": "Photo Required",
+      "photoRequiredMessage": "Please select a photo of your space before continuing.",
+      "imageTooLarge": "Image Too Large",
+      "imageTooLargeMessage": "Please select a smaller image or take a new photo with lower quality.",
+      "imageTooSmall": "Image Too Small",
+      "imageTooSmallMessage": "Please select a larger image for better results.",
+      "permissionRequired": "Permission Required",
+      "permissionMessage": "Please grant camera roll permissions to upload images.",
+      "cameraPermissionMessage": "Please allow camera access to take photos for your design project.",
+      "error": "Error",
+      "errorMessage": "Failed to process image. Please try again."
+    },
+    "roomType": {
+      "continueButton": "Continue to Style Selection"
+    },
+    "styleSelection": {
+      "title": "Choose Your Style",
+      "subtitle": "Select a design style that will transform your space",
+      "continue": "Continue"
+    },
+    "colorPalette": {
+      "title": "Pick Your Colors",
+      "subtitle": "Choose a color palette for your redesigned space",
+      "paintTitle": "Choose Your Paint Color",
+      "paintSubtitle": "Select a custom color for your walls",
+      "generateDesign": "Generate Design"
+    },
+    "customPrompt": {
+      "title": "Describe Your Vision",
+      "subtitle": "Upload a photo and tell us how you'd like to transform your space",
+      "uploadPhotoLabel": "1. Upload Your Room Photo",
+      "describeVisionLabel": "2. Describe Your Vision",
+      "tapToUpload": "Tap to upload photo",
+      "changePhoto": "Change Photo",
+      "placeholder": "E.g., Make it modern minimalist with white walls, wooden furniture, and plants. Add warm lighting...",
+      "helperText": "Be specific about colors, styles, furniture, lighting, and any details you want to see",
+      "generateButton": "Generate Design",
+      "photoRequired": "Photo Required",
+      "photoRequiredMessage": "Please upload a photo of your room",
+      "descriptionRequired": "Description Required",
+      "descriptionRequiredMessage": "Please describe your vision for the room",
+      "generationFailed": "Generation Failed",
+      "selectPhotoSource": "Select Photo Source",
+      "takePhoto": "Take Photo",
+      "chooseGallery": "Choose from Gallery",
+      "imageTooLarge": "Image Too Large",
+      "imageTooLargeMessage": "Please select a smaller image (max 4MB)",
+      "imageTooSmall": "Image Too Small",
+      "imageTooSmallMessage": "Please select a larger image",
+      "permissionRequired": "Permission Required",
+      "permissionMessage": "Please grant permission to access your photo library",
+      "cameraPermissionMessage": "Please grant camera permission",
+      "error": "Error",
+      "errorProcessing": "Failed to process image. Please try again.",
+      "errorCamera": "Failed to open camera. Please try again.",
+      "errorGallery": "Failed to open gallery. Please try again."
+    },
+    "results": {
+      "title": "Your Design",
+      "subtitle": "Here's your transformed space!",
+      "generating": "Generating your design...",
+      "regenerate": "Regenerate",
+      "save": "Save",
+      "aiCreating": "AI is creating your design...",
+      "designPlaceholder": "Generated design will appear here",
+      "tryAgain": "Try Again",
+      "errorNoDesign": "No design to save",
+      "errorNoShare": "No design to share",
+      "errorCannotRegenerate": "Cannot regenerate without original image",
+      "successSaved": "Design saved to your photo library and profile!",
+      "errorSaveFailed": "Failed to save design. Please try again.",
+      "errorShareFailed": "Failed to share design. Please try again.",
+      "errorShareNotAvailable": "Sharing is not available on this device",
+      "permissionRequired": "Permission Required",
+      "permissionMessage": "Please allow access to save images"
+    },
+    "aiLoader": {
+      "pleaseWait": "PLEASE WAIT",
+      "identifyingSpace": "Identifying space…",
+      "step1": "Analyzing your image with AI",
+      "step2": "Looking at the details",
+      "step3": "Applying details",
+      "aiThinking": "AI is thinking..."
+    }
+  },
+  "styles": {
+    "mediterranean": {
+      "title": "Mediterranean",
+      "description": "Warm, rustic, coastal European"
+    },
+    "minimalist": {
+      "title": "Minimalist",
+      "description": "Extreme simplicity, clean aesthetics"
+    },
+    "neoclassical": {
+      "title": "Neoclassical",
+      "description": "Elegant, symmetrical, refined"
+    },
+    "contemporary": {
+      "title": "Contemporary",
+      "description": "Current modern trends, sleek"
+    },
+    "scandinavian": {
+      "title": "Scandinavian",
+      "description": "Cozy, functional, light colors"
+    },
+    "industrial": {
+      "title": "Industrial",
+      "description": "Raw, unfinished, urban warehouse"
+    },
+    "bohemian": {
+      "title": "Bohemian",
+      "description": "Eclectic, artistic, free-spirited"
+    },
+    "artDeco": {
+      "title": "Art Deco",
+      "description": "Glamorous 1920s geometric luxury"
+    },
+    "midCentury": {
+      "title": "Mid-Century",
+      "description": "1950s-60s retro-contemporary"
+    },
+    "japaneseZen": {
+      "title": "Japanese Zen",
+      "description": "Minimalism, nature, tranquility"
+    },
+    "coastal": {
+      "title": "Coastal",
+      "description": "Beach-inspired, airy elegance"
+    },
+    "modernFarmhouse": {
+      "title": "Modern Farmhouse",
+      "description": "Rustic charm, contemporary comfort"
+    },
+    "traditional": {
+      "title": "Traditional",
+      "description": "Classic, timeless, formal"
+    },
+    "tropical": {
+      "title": "Tropical",
+      "description": "Resort-inspired, lush, vibrant"
+    },
+    "frenchCountry": {
+      "title": "French Country",
+      "description": "Provincial charm, rustic elegance"
+    },
+    "eclectic": {
+      "title": "Eclectic",
+      "description": "Mixed periods and personalities"
+    },
+    "brutalist": {
+      "title": "Brutalist",
+      "description": "Bold, monolithic, raw concrete"
+    },
+    "maximalist": {
+      "title": "Maximalist",
+      "description": "Abundant patterns and colors"
+    },
+    "transitional": {
+      "title": "Transitional",
+      "description": "Balance of traditional & contemporary"
+    },
+    "bauhaus": {
+      "title": "Bauhaus",
+      "description": "Functional, geometric, modernist"
+    }
+  },
+  "colorPalettes": {
+    "surpriseMe": "Surprise Me",
+    "millennialGray": "Millennial Gray",
+    "terracottaMirage": "Terracotta Mirage",
+    "neonSunset": "Neon Sunset",
+    "forestHues": "Forest Hues",
+    "peachOrchard": "Peach Orchard",
+    "fuschiaBlossom": "Fuschia Blossom",
+    "emeraldGem": "Emerald Gem",
+    "pastelBreeze": "Pastel Breeze"
+  },
+  "paywall": {
+    "headerTitle": "Design Without Limits",
+    "headerSubtitle": "Get unlimited redesigns, premium styles, and instant AI transformations with the Pro plan.",
+    "weekly": "Weekly",
+    "annual": "Annual",
+    "billedWeekly": "Billed weekly",
+    "perWeek": "/week",
+    "bestValue": "BEST VALUE",
+    "subscribeNow": "Subscribe Now",
+    "disclaimer": "Cancel anytime. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.",
+    "restore": "Restore",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "successTitle": "Success!",
+    "successMessage": "You now have access to all Pro features",
+    "purchaseFailed": "Purchase Failed",
+    "restoreSuccess": "Your purchases have been restored!",
+    "noPurchases": "No active subscriptions found to restore.",
+    "restoreFailed": "Restore Failed",
+    "skip": "Skip"
+  },
+  "spaceTypes": {
+    "stepTitles": {
+      "interior_design": {
+        "title": "Select Room Type",
+        "subtitle": "What type of room would you like to redesign?"
+      },
+      "garden_design": {
+        "title": "Choose Garden Type",
+        "subtitle": "What style of garden are you creating?"
+      },
+      "exterior_design": {
+        "title": "Select Property Type",
+        "subtitle": "What type of property are you redesigning?"
+      },
+      "floor_restyle": {
+        "title": "Select Floor Area",
+        "subtitle": "Which area flooring would you like to update?"
+      },
+      "balcony_design": {
+        "title": "Choose Balcony Type",
+        "subtitle": "What type of balcony are you designing?"
+      },
+      "paint": {
+        "title": "Select Paint Area",
+        "subtitle": "Which area would you like to repaint?"
+      },
+      "childrens_room": {
+        "title": "Select Children's Room Type",
+        "subtitle": "What type of space are you creating for your child?"
+      }
+    },
+    "rooms": {
+      "kitchen": { "label": "Kitchen", "description": "Design your cooking space" },
+      "living_room": { "label": "Living Room", "description": "Transform your main area" },
+      "home_office": { "label": "Home Office", "description": "Create a workspace" },
+      "bedroom": { "label": "Bedroom", "description": "Design a restful space" },
+      "bathroom": { "label": "Bathroom", "description": "Update your bathroom" },
+      "dining_room": { "label": "Dining Room", "description": "Enhance dining experience" },
+      "coffee_shop": { "label": "Coffee Shop", "description": "Create café atmosphere" },
+      "study_room": { "label": "Study Room", "description": "Design learning space" },
+      "restaurant": { "label": "Restaurant", "description": "Commercial dining" },
+      "gaming_room": { "label": "Gaming Room", "description": "Entertainment zone" },
+      "office": { "label": "Office", "description": "Professional workspace" },
+      "attic": { "label": "Attic", "description": "Upper-level space" }
+    },
+    "gardens": {
+      "vegetable_garden": { "label": "Vegetable Garden", "description": "Grow your own food" },
+      "flower_garden": { "label": "Flower Garden", "description": "Beautiful blooms" },
+      "zen_garden": { "label": "Zen Garden", "description": "Meditation & tranquility" },
+      "entertainment_area": { "label": "Entertainment Area", "description": "Outdoor gatherings" },
+      "pool_area": { "label": "Pool Area", "description": "Swimming & relaxation" },
+      "play_area": { "label": "Play Area", "description": "Kids outdoor fun" },
+      "cottage_garden": { "label": "Cottage Garden", "description": "Charming & rustic" },
+      "herb_garden": { "label": "Herb Garden", "description": "Fresh herbs & spices" },
+      "backyard_garden": { "label": "Backyard", "description": "Main outdoor space" },
+      "front_yard_garden": { "label": "Front Yard", "description": "Curb appeal focus" },
+      "rooftop_garden": { "label": "Rooftop Garden", "description": "Urban rooftop oasis" },
+      "patio_deck": { "label": "Patio/Deck", "description": "Outdoor living space" }
+    },
+    "exteriors": {
+      "single_family_home": { "label": "Single Family Home", "description": "Traditional house" },
+      "townhouse": { "label": "Townhouse", "description": "Multi-story attached" },
+      "apartment_building": { "label": "Apartment Building", "description": "Multi-unit building" },
+      "modern_villa": { "label": "Modern Villa", "description": "Contemporary luxury" },
+      "cottage": { "label": "Cottage", "description": "Cozy small home" },
+      "ranch_house": { "label": "Ranch House", "description": "Single-story sprawling" },
+      "colonial_home": { "label": "Colonial Home", "description": "Traditional colonial" },
+      "mediterranean_home": { "label": "Mediterranean Home", "description": "Mediterranean style" }
+    },
+    "floors": {
+      "living_room_floor": { "label": "Living Room", "description": "Main living area floor" },
+      "bedroom_floor": { "label": "Bedroom", "description": "Bedroom flooring" },
+      "kitchen_floor": { "label": "Kitchen", "description": "Kitchen flooring" },
+      "bathroom_floor": { "label": "Bathroom", "description": "Bathroom flooring" },
+      "hallway_floor": { "label": "Hallway", "description": "Hallway flooring" },
+      "entryway_floor": { "label": "Entryway", "description": "Entrance flooring" },
+      "dining_room_floor": { "label": "Dining Room", "description": "Dining area flooring" },
+      "basement_floor": { "label": "Basement", "description": "Basement flooring" }
+    },
+    "balconies": {
+      "small_balcony": { "label": "Small Balcony", "description": "Compact outdoor space" },
+      "large_balcony": { "label": "Large Balcony", "description": "Spacious balcony" },
+      "juliet_balcony": { "label": "Juliet Balcony", "description": "Decorative balcony" },
+      "terrace": { "label": "Terrace", "description": "Large outdoor terrace" },
+      "covered_balcony": { "label": "Covered Balcony", "description": "Protected outdoor space" },
+      "open_balcony": { "label": "Open Balcony", "description": "Open-air balcony" },
+      "corner_balcony": { "label": "Corner Balcony", "description": "Wrap-around balcony" }
+    },
+    "paint": {
+      "living_room_walls": { "label": "Living Room", "description": "Living room walls" },
+      "bedroom_walls": { "label": "Bedroom", "description": "Bedroom walls" },
+      "kitchen_walls": { "label": "Kitchen", "description": "Kitchen walls" },
+      "bathroom_walls": { "label": "Bathroom", "description": "Bathroom walls" },
+      "dining_room_walls": { "label": "Dining Room", "description": "Dining room walls" },
+      "hallway_walls": { "label": "Hallway", "description": "Hallway walls" },
+      "office_walls": { "label": "Office", "description": "Office walls" },
+      "accent_wall": { "label": "Accent Wall", "description": "Feature wall" }
+    },
+    "childrens_rooms": {
+      "nursery": { "label": "Nursery", "description": "Newborn & infant room" },
+      "toddler_room": { "label": "Toddler Room", "description": "Ages 1-3 years" },
+      "preschool_room": { "label": "Preschool Room", "description": "Ages 3-5 years" },
+      "elementary_age_room": { "label": "Elementary Room", "description": "Ages 6-12 years" },
+      "teen_room": { "label": "Teen Room", "description": "Ages 13+ years" },
+      "playroom": { "label": "Playroom", "description": "Dedicated play space" },
+      "shared_kids_room": { "label": "Shared Room", "description": "Multi-child bedroom" },
+      "study_nook": { "label": "Study Nook", "description": "Homework & learning" }
+    }
+  },
+  "categories": {
+    "interior_design": {
+      "title": "Interior Design",
+      "tagline": "Transform your indoor space",
+      "description": "Redesign living rooms, bedrooms, kitchens and more with AI-powered interior design suggestions."
+    },
+    "garden_design": {
+      "title": "Garden Design",
+      "tagline": "Beautify your outdoor space",
+      "description": "Transform your garden, patio, or outdoor living space with landscaping and design ideas."
+    },
+    "paint": {
+      "title": "Paint",
+      "tagline": "Change colors and finishes",
+      "description": "Experiment with different paint colors and wall finishes for any room."
+    },
+    "exterior_design": {
+      "title": "Exterior Design",
+      "tagline": "Enhance your home exterior",
+      "description": "Improve your home's curb appeal with exterior design and color recommendations."
+    },
+    "floor_restyle": {
+      "title": "Floor Restyle",
+      "tagline": "Update your flooring",
+      "description": "Visualize different flooring options including hardwood, tile, and carpet."
+    },
+    "balcony_design": {
+      "title": "Balcony Design",
+      "tagline": "Refresh your balcony space",
+      "description": "Transform your balcony into a stylish outdoor retreat with furniture, plants, and decor ideas."
+    },
+    "childrens_room": {
+      "title": "Children's Room",
+      "tagline": "Create magical spaces for kids",
+      "description": "Design fun, safe, and inspiring rooms for children of all ages - from nurseries to teen rooms."
+    }
+  }
+}
