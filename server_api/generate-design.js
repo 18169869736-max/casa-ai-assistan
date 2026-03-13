@@ -137,9 +137,7 @@ module.exports = async function handler(req, res) {
     }
 
     // Parse request
-    const { image, roomType, style, colorPalette, categoryId } = req.body;
-    // Always use the correct model, ignore what client sends
-    const model = 'gemini-2.5-flash-image';
+    const { image, roomType, style, colorPalette, categoryId, model = 'gemini-2.5-flash-image' } = req.body;
     console.log('Request params:', {
       hasImage: !!image,
       imageLength: image ? image.length : 0,
