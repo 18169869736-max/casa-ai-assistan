@@ -152,6 +152,11 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ message: 'Missing required parameters: image and customPrompt' });
     }
 
+    // Always use the correct model, ignore what client sends
+    // Force set the model to gemini-2.0-flash
+    const actualModel = 'gemini-2.0-flash';
+    console.log('Forcing model usage:', actualModel);
+
     // Check image size
     const maxImageSize = 4 * 1024 * 1024; // 4MB limit to stay under Vercel's 4.5MB total
     if (image.length > maxImageSize) {
@@ -177,7 +182,7 @@ module.exports = async function handler(req, res) {
       prompt: customPrompt,
       referenceImage: image,
       apiKey,
-      model
+      model: actualModel
     });
     console.log('Gemini image transformation response received:', !!geminiResponse);
 
