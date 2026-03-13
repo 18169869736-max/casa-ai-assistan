@@ -164,13 +164,14 @@ module.exports = async function handler(req, res) {
 
     // Edit/transform the user's room image using Gemini 2.5 Flash
     console.log('Transforming image with Gemini 2.5 Flash...');
-    console.log('API key present:', !!process.env.GOOGLE_CLOUD_API_KEY);
-    console.log('API key length:', process.env.GOOGLE_CLOUD_API_KEY ? process.env.GOOGLE_CLOUD_API_KEY.length : 0);
+    const apiKey = process.env.GOOGLE_GEMINI_API_KEY || process.env.GOOGLE_CLOUD_API_KEY;
+    console.log('API key present:', !!apiKey);
+    console.log('API key length:', apiKey ? apiKey.length : 0);
     
     const geminiResponse = await generateImageWithGemini({
       prompt,
       referenceImage: image,
-      apiKey: process.env.GOOGLE_CLOUD_API_KEY,
+      apiKey,
       model
     });
     console.log('Gemini image transformation response received:', !!geminiResponse);

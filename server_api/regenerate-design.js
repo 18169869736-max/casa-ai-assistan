@@ -124,7 +124,7 @@ IMPORTANT: Create a unique variation that is noticeably different from previous 
     const geminiResponse = await generateImageWithGemini({
       prompt: variationPrompt,
       referenceImage: image,
-      apiKey: process.env.GOOGLE_CLOUD_API_KEY, // YOUR API KEY HERE
+      apiKey: process.env.GOOGLE_GEMINI_API_KEY || process.env.GOOGLE_CLOUD_API_KEY, // YOUR API KEY HERE
       model,
       temperature: 0.9 // Higher temperature for more variation
     });

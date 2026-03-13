@@ -14,12 +14,12 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const apiKey = process.env.GOOGLE_CLOUD_API_KEY;
+    const apiKey = process.env.GOOGLE_GEMINI_API_KEY || process.env.GOOGLE_CLOUD_API_KEY;
     
     if (!apiKey) {
       return res.status(500).json({ 
         error: 'API key not configured',
-        message: 'GOOGLE_CLOUD_API_KEY environment variable is not set'
+        message: 'GOOGLE_GEMINI_API_KEY environment variable is not set'
       });
     }
 
