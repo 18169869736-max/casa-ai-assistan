@@ -11,7 +11,7 @@ function getHandler(moduleExports) {
 }
 
 module.exports = async function dispatch(req, res, handlers, groupName) {
-  const action = req.query?.action;
+  const action = req.query?.action || req.body?.action;
 
   if (!action) {
     return res.status(400).json({
