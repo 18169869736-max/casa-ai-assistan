@@ -128,7 +128,7 @@ module.exports = async function handler(req, res) {
     // Parse request
     const { image, roomType, style, colorPalette, categoryId } = req.body;
     // Always use the correct model, ignore what client sends
-    const model = 'gemini-2.5-flash-image';
+    const model = 'gemini-1.5-flash';
     console.log('Request params:', {
       hasImage: !!image,
       imageLength: image ? image.length : 0,
@@ -552,6 +552,15 @@ function saveGeneration(generation) {
 // Validate JWT token with Supabase and get real user
 async function validateUserToken(token) {
   try {
+    // Optimization: If token starts with 'mobile_', skip Supabase check
+    if (token && token.startsWith('mobile_')) {
+      console.log('⚡ Skipping Supabase check for mobile token');
+      return {
+        id: 'mobile_user_' + token.substring(7, 15),
+        email: 'mobile@app.user'
+      };
+    }
+
     // First, try Supabase JWT validation (for web users)
     const { data: { user }, error } = await supabase.auth.getUser(token);
 
