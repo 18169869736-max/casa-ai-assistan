@@ -155,8 +155,8 @@ module.exports = async function handler(req, res) {
     }
 
     // Always use the correct model, ignore what client sends
-    // Force set the model to gemini-2.0-flash
-    const actualModel = 'gemini-2.0-flash';
+    // Force set the model to gemini-2.5-flash-image
+    const actualModel = 'gemini-2.5-flash-image';
     console.log('Forcing model usage:', actualModel);
 
     // Check image size and compress if needed
