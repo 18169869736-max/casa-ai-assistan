@@ -52,6 +52,7 @@ module.exports = async function handler(req, res) {
 
     // Authenticate user
     const authHeader = req.headers.authorization;
+    // Log auth header presence for debugging
     console.log('Auth header:', authHeader ? 'present' : 'missing');
     
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
